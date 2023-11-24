@@ -1,6 +1,5 @@
 package com.springboot.valid_exception.data.dto;
 
-import com.springboot.valid_exception.data.group.ValidationGroup1;
 import lombok.*;
 
 import javax.validation.constraints.*;
@@ -24,7 +23,7 @@ public class ValidRequestDto {
     @Max(value = 40)
     int age;
 
-    @Size(min = 0, max = 40)
+    @Size(max = 40)
     String description;
 
     @Positive

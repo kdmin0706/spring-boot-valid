@@ -1,23 +1,17 @@
 package com.springboot.valid_exception.common.controller;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.Getter;
 
 public class Constants {
 
+    @Getter
     public enum ExceptionClass {
         PRODUCT("Product");
 
-        private String exceptionClass;
+        private final String exceptionClass;
 
         ExceptionClass(String exceptionClass) {
             this.exceptionClass = exceptionClass;
-        }
-
-        public String getExceptionClass() {
-            return exceptionClass;
         }
 
         @Override
